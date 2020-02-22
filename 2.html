@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <section>
+            <form method="#" action="#">
+               <div>
+                <label>Nama</label>
+                <input type="text" name="Nama">
+               </div>
+               <div>
+                   <label>Pasword</label>
+                   <input type="password" name="password">
+               </div>
+               <div>
+                   <input type="submit" name="submit" value="SUBMIT">
+               </div>
+            </form>
+            <script type="text/javascript">
+                function isAcceptedUsername(Nama){
+                    var Regex = /^[a-z]{5-8}$/i;
+                }
+                function isAcceptedPasword(Password){
+                    var Regex = /^[a-zA-Z0-9]{9}$/i;
+                }
+                if (isAcceptedUsername("abcdefgh")) {
+                    alert("Username is Valid");
+                }else{
+                    alert("Username is Invalid");
+                }
+                if (isAcceptedPassword("aaaAAA123")) {
+                    alert("Password is Valid");
+                }else{
+                    alert("Password is Invalid");
+                }
+            </script>
+        </section>
+    </body>
+</html>
